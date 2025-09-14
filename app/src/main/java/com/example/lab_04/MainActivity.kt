@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-//BUTTON
+//IMAGE
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
@@ -74,9 +74,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Button(onClick = { /* acción simulada */ }) {
             Text("Click me")
         }
+        Spacer(modifier = Modifier.height(8.dp))
+        Image(
+            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            contentDescription = "App icon"
+        )
     }
 }
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
