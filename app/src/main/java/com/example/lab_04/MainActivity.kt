@@ -63,13 +63,18 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-//TEXT:
+//BUTTON
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+    Column(modifier = modifier.padding(16.dp)) {
+        Text(
+            text = "Hello $name!"
+        )
+        Spacer(modifier = Modifier.height(8.dp))
+        Button(onClick = { /* acción simulada */ }) {
+            Text("Click me")
+        }
+    }
 }
 
 @Preview(showBackground = true)
