@@ -63,28 +63,27 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-//IMAGE
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Column(modifier = modifier.padding(16.dp)) {
-        Text(
-            text = "Hello $name!"
-        )
-        Spacer(modifier = Modifier.height(8.dp))
+fun ViewHolaCurso(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = "Hola Curso 👋", style = MaterialTheme.typography.h5)
+        Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { /* acción simulada */ }) {
-            Text("Click me")
+            Text("Presióname")
         }
-        Spacer(modifier = Modifier.height(8.dp))
-        Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground),
-            contentDescription = "App icon"
-        )
     }
 }
+
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun ViewHolaCursoPreview() {
     Lab_04Theme {
-        Greeting("Android")
+        ViewHolaCurso()
     }
 }
