@@ -68,7 +68,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
         Text(
-            text = "Hello $name!"
+            text = "HOLAAAA $name!" //linea editada
         )
         Spacer(modifier = Modifier.height(8.dp))
         Button(onClick = { /* acción simulada */ }) {
