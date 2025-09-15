@@ -77,7 +77,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Hello $name!")
+        Text(text = "HOLA $name!") //cambio persona A
         Spacer(modifier = Modifier.height(8.dp))
         Button(onClick = { }) {
             Text("Click me")
